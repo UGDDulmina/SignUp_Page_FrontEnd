@@ -1,6 +1,8 @@
 
 import {useState} from "react";
 import axios from 'axios';
+import './app.css';
+
 
 function App() {
   const [username,setUsername] = useState("");
@@ -22,8 +24,8 @@ function App() {
       console.log(err)
     })
 
-    }
-  }
+    
+  };
   return (
    <div classname="App">
     Signup
@@ -60,5 +62,5 @@ function App() {
    </div>
   );
 
-
+}
 export default App;
